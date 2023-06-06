@@ -1,8 +1,8 @@
-var list = require("..../country/state/city/index.js");
-var getFirstNames = require(".../utilities/utils/index.js");
+var getpeopleNames = require("../country/state/city/index.js");
+var getFirstNames = require("../utilities/utils/index.js");
 
-var getPeopleInCity = (a) => {
-  return getFirstNames(list);
+var getPeopleInCity = (getpeopleNames) => {
+  return getFirstNames(getpeopleNames);
 };
-module.exports = getPeopleInCity(list);
-console.log(getPeopleInCity(list));
+module.exports = getPeopleInCity(getpeopleNames);
+console.log(getPeopleInCity(getpeopleNames));
